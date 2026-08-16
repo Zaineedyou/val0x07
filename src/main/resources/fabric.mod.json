@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "val0x07",
+  "version": "${version}",
+  "name": "Val0x07",
+  "description": "Client-side voice changer addon for Simple Voice Chat, providing War Radio and Female Voice presets plus a fully custom adjustable preset, applied to outgoing microphone audio.",
+  "authors": [
+    "Zaineedyou"
+  ],
+  "contact": {},
+  "license": "ARR",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.zaineedyou.val0x07.Val0x07Client"
+    ],
+    "voicechat": [
+      "com.zaineedyou.val0x07.integration.SvcPluginImpl"
+    ],
+    "modmenu": [
+      "com.zaineedyou.val0x07.integration.Val0x07ModMenuIntegration"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "voicechat_api": ">=${voicechat_api_version}"
+  }
+}
